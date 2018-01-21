@@ -15,6 +15,8 @@ include("connection.php");
 
 
 <?php
+     
+
      if(isset($_GET["s"])){ 
     $search = $_GET["s"];
 
@@ -30,7 +32,7 @@ if(!empty($search)) {
   
        $sql = "SELECT media_id, title, category, img 
          FROM Media
-         WHERE title LIKE '%".$search."%'";
+         WHERE title LIKE '%".ucwords($search)."%'";
 
 
           $result_search = $conn->query($sql);

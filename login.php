@@ -14,7 +14,7 @@
 	<div class="login_page">
   		
     		<form  action="login.php" method="POST">
-          <?php require('errors.php'); ?>
+          
 
 <table>
 

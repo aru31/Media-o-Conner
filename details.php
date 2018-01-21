@@ -7,6 +7,8 @@
 
 include("connection.php");
 
+ 
+
 
 $sql_query = "SELECT media_id FROM Media";
 
@@ -39,7 +41,9 @@ else{
 
 include("header.php"); 
 
-
+if(!isset($_SESSION['username'])){
+     header('location: login.php');
+  }
 
 
 $sql = "SELECT media_id, title, img, genre, format, year, category, authors, publisher, isbn, authors, writers, director, artist, stars FROM Media WHERE media_id ='" .$_GET["id"]."';" ;

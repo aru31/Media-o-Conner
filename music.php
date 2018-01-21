@@ -5,6 +5,10 @@ include("connection.php");
 $pageTitle = "Music";
 include ("header.php");
 
+ if(!isset($_SESSION['username'])){
+     header('location: login.php');
+  }
+
 
 if(isset($_GET["s"])){ 
     $search = $_GET["s"];
@@ -21,7 +25,7 @@ if(!empty($search)) {
   
        $sql = "SELECT media_id, title, category, img 
          FROM Media
-         WHERE title LIKE '%".$search."%'";
+         WHERE title LIKE '%".ucwords($search)."%'";
 
 
        

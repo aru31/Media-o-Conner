@@ -8,14 +8,14 @@ include('server.php');
 <html>
 <head>
   <title><?php echo $pageTitle ?></title>
-  <link rel="stylesheet" href="project.css">
+  <link rel="stylesheet" href="project.css" content="width=device-width, initial-scale=1.0">
 
 </head>
 
    <div class="main-nav">
         <ul class="nav">
           <li class="name"><a href= #>Media'o Conner</a></li>
-          <li class="welcome"><a href= #>Welcome <?php echo $_SESSION['username']. "..!" ?> </a></li>
+          <li class="welcome"><a href= #>Welcome <?php echo $_SESSION['username']. ".." ?> </a></li>
           <li><a href="project_woc.php?logout=1">Log out</a></li>
         </ul>
     </div>
@@ -33,6 +33,7 @@ unset($_SESSION['success']);
     }
 ?>
 </div>
+
 
   <h1 class="heading">Search for Books, Movies, Music...</h1>
 

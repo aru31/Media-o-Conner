@@ -93,7 +93,13 @@ header("location:suggest.php?status=thanks");
 $pageTitle = "Suggest a Media Item";
 $section = "suggest";
 
-include("header.php"); ?>
+include("header.php");
+
+ if(!isset($_SESSION['username'])){
+     header('location: login.php');
+  }
+
+   ?>
 
 
 <?php

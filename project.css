@@ -15,7 +15,7 @@ body {
 }
 /* Link Styles */
 
-.nav li a{
+.main-nav li a{
   text-decoration: none;
   color: #0499ff;
   font-family: fantasy;
@@ -46,31 +46,34 @@ body {
 .main-nav {
   width: 100%;
   min-height: 20px;
+  position: fixed;
+  z-index: +1;
   padding: 6px;
-  color: orange;
   text-align: center;
   font-family: Gill Sans Extrabold, sans-serif;
   background-color: black;
+  margin-bottom: 50px;
 
 }
+
 .nav {
   display: flex;
   justify-content: space-around;
-  font-weight: 700;
+  font-weight: bold;
   list-style-type: none;
   margin: 0 auto;
   font-family: Gill Sans Extrabold, sans-serif;
   padding-top: 3px; ;
 }
-.nav .name {
-  display: none;
-}
+
 .nav li {
   padding: 5px 10px 10px 10px;
 }
+
 .nav a {
   transition: all .2s;
 }
+
 .nav a:hover {
   color: white;
 }
@@ -85,7 +88,7 @@ body {
   width: 400px;
   margin-left: 10%;
   min-width: 250px;
-  margin-top: 40px;
+  margin-top: 80px;
   padding: 9px 3px 9px 3px;
   line-height: 22px;
   background-color: lightyellow; 
@@ -93,7 +96,6 @@ body {
   font-family: fantasy;`
   font-weight: bold;
 }
-
 
 header {
   text-align: center;
@@ -103,18 +105,11 @@ header {
   padding-top: 0px;
   background-position: center;
   background-repeat: no-repeat;
-  height: 930px;
-  margin-top: 0px;
+  height: 970px;
   opacity: 0.9;
-
+   line-height: 1.5;
+     min-height: 450px;
 }
-header {
-  line-height: 1.5;
-}
-
- header {
-    min-height: 450px;
-  }
 
   .nav {
     max-width: 1200px;
@@ -123,7 +118,6 @@ header {
   .nav .name {
     display: block;
     margin-right: auto;
-    color: orange;
       }
 
 .categories{
@@ -152,7 +146,6 @@ header {
 
 .click_me{
   margin-top: 120px;
-
 }
 
 .click_me a{
@@ -179,10 +172,10 @@ header {
 
 .heading{
   color: black;
-  padding-top: 90px;
+  margin-top: 100px;
   font-family: fantasy;
   font-size: 40px;
- 
+  margin-bottom: 60px;
 }
 
 .line{
@@ -208,27 +201,22 @@ a.social {
 }
 
 .twitter{
-min-width: 30px;
+min-width: 40px;
   width: 50px;
 }
 
-.linkedin{
-min-width: 30px;
-  width: 30px;
-}
-
 .facebook{
-min-width: 30px;
+min-width: 40px;
   width: 70px;
 }
 
 .instagram{
-min-width: 30px;
+min-width: 40px;
   width: 70px;
 }
 
 .github{
-min-width: 30px;
+min-width: 40px;
   width: 70px;
 }
 
@@ -242,21 +230,22 @@ min-width: 30px;
 
 .home{
 width: 250px;
+min-width: 70px;
 }
 
 .terms{
-
 width: 250px;
+min-width: 70px;
 }
 
 .about{
-
 width: 200px;
+min-width: 70px;
 }
 
 .help{
-
 width: 200px;
+min-width: 70px;
 }
 
 .copyright{
@@ -266,10 +255,10 @@ width: 200px;
 a.social:hover {
   opacity: 1;
 }
+
 .clearfix {
   clear: both;
 }
-
 
 .items{
   list-style-type: none;
@@ -301,9 +290,14 @@ a.social:hover {
  ul.items li a:hover:after {
     content: '+';
     font-size: 50px;
-     position: absolute; top:35px; right:30px; 
+     position: absolute; 
+     top:35px; 
+     right:30px; 
      color: #3888c2; 
      vertical-align: top;
+     color: red;
+     opacity: 1;
+      transition: all 0.13s;
 }
 
  ul.items li a {
@@ -314,8 +308,9 @@ a.social:hover {
 }
 
  ul.items li a:hover {
-    opacity: 1;
+    opacity: 0.8;
     color: #666;
+    transition: all 0.13s;
 }
 
  ul.items li img  {
@@ -377,7 +372,8 @@ clear:both;
 
 form {
   width: 475px;
- margin: 34px auto;  /*will set up same margin*/
+ margin: 34px auto;
+ min-width: 200px;  /*will set up same margin*/
 }
 
 form tr {

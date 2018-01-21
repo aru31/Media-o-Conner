@@ -14,7 +14,7 @@
    
         <form action="register.php" method="post">
           <!-- display validation errors here -->
-          <?php include('errors.php');?>
+          
 <table>
          <tr>
             <th><label for="name">Name</label></th>

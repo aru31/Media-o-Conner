@@ -40,6 +40,7 @@ $sql = "INSERT INTO Register(user, email, password_one, password_confirm)
            VALUES ('$user', '$email', '$password_one', '$password_confirm')";
 
 
+
    if($connec->query($sql) === TRUE){
 		header('location: login.php'); // now after being registered u need to login
    }
@@ -69,7 +70,7 @@ $results_login = $connec->query($sql_query);
 
 
  if($results_login->num_rows > 0){
-		header('location: project_woc.php'); // redirect to seesion page
+		header('location: project_woc.php'); // redirect to main page
 }
 else {
   echo "OOPS! Something went Wrong, Try Again";
