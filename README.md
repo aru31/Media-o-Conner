@@ -1,2 +1,2 @@
 # media-o-Conner
-collection of media library
+a library of media content like movies, Music and Books
